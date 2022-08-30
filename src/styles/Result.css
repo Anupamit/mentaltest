@@ -1,0 +1,100 @@
+.firstdiv{
+    background: #6b6fbc;
+}
+.buttondiv{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.back{
+    display: flex;
+    width: auto;
+    padding: 9px 18px 9px 35px;
+    color: #ffffff;
+    background: rgb(0 0 0 / 20%);
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+.link{
+    color: #6b6fbc;
+}
+.againtest{
+    background-color: #6b6f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+    padding: 0 22px;
+    height: 58px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'BS', Roboto, Arial, sans-serif;
+}   
+.result__h2 {
+    font-size: 20px;
+    color: #5D5C73;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    -webkit-font-smoothing: auto;
+}
+
+.result__description-wrap {
+    font-size: 18px;
+    color: #5e5e73;
+    line-height: 1.7em;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 40px auto 0;
+}
+.anotherdiv{
+    background-color: #ffffff;
+}
+.copybtn{
+    cursor: pointer;
+    background-color: transparent;
+    height: 25px;
+    text-align: center;
+    width: 100px;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    border-radius: 45%;
+}
+.WhatsAppIcon{
+    color: forestgreen;
+}
+.blue{
+    color: #6b6fbc;
+}
+.red{
+    color: red;
+}

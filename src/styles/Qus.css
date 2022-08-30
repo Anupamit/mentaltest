@@ -1,0 +1,60 @@
+body {
+    background: #6b6fbc;
+}
+.quscontainer{
+    overflow-x: hidden;
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    /* letter-spacing: 0.2px; */
+    font-style: normal;
+    font-weight: 400;
+    color: #5e5e73;
+    -webkit-font-smoothing: antialiased;
+}
+.qustext{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.img{
+    /* max-height: calc(var(--height-img)/1.5); */
+    --height-img: 120px;
+    max-height: var(--height-img);
+    max-width: 50%;
+    display: block;
+    min-height: auto;
+    max-height: 35vh;
+    margin: 0 auto 20px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .anscontainer{
+    text-align: center;
+    max-width: 900px;
+    margin: 0;
+    animation-name: fadeIn;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* .inlineList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+} */

@@ -1,0 +1,35 @@
+body {
+    background: #6b6fbc;
+}
+.text{
+    text-align: center;
+}
+.buttonarea{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.button{
+    background-color: #6b6f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 250px;
+    padding: 0 22px;
+    height: 58px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'BS', Roboto, Arial, sans-serif;
+}
