@@ -14,7 +14,9 @@ function Result() {
 
     const backHome = () => {
         window.location.href = "/";
-        console.log("you click the back home page");
+    };
+    const testAgain = () => {
+        window.location.href = "/";
     };
     return (
         <div>
@@ -23,7 +25,7 @@ function Result() {
                 <button onClick={backHome} className="back"><ArrowBackOutlinedIcon fontSize="large"/> </button>
                 <h1 className="h1">IQ Test for kids from 7 to 16 year old</h1>
                 <div className="buttondiv">
-                <button className="againtest">
+                <button onClick={testAgain} className="againtest">
                     <RefreshOutlinedIcon />
                     Take the test again
                 </button>
@@ -31,13 +33,12 @@ function Result() {
             </div>
             <div className="anotherdiv">
                 <h2 className="result__h2">Your result:</h2>
-                <p className="result__description-wrap">Test time: 00:02:09, average users 00:03:23.</p>
                 <div className="result__description-wrap">
                     <p>Test time: 00:02:09, average users 00:03:23.</p>
                     <p>
                         Your IQ is 115. This corresponds to an above average level IQ. In
                         this test you have 04 correct answers from 05. This is a good result
-                        for your age 16. Andy Warhol has the same IQ!
+                        for your age. Andy Warhol has the same IQ!
                     </p>
                     <p>
                         Please note that the first four questions of the test were only the

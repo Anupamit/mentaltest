@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Result from "./Result";
 import "./styles/Qus.css";
+import Result from "./Result";
 
 import q1 from "./img/q1.svg";
 import q1o1 from "./img/q1o1.svg";
@@ -47,42 +47,47 @@ const questionList = [
     questionImage: q1,
     questionText:
       "1. Which shape should be in the rightmost cell with a question mark?",
-    questionOptions: [q1o1, q1o2, q1o3, q1o4, q1o5, q1o6]
+    questionOptions: [q1o1, q1o2, q1o3, q1o4, q1o5, q1o6],
+    answer: q1o5
   },
   {
     questionImage: q2,
     questionText:
       "2. Which shape should be in the rightmost cell with a question mark?",
-    questionOptions: [q2o1, q2o2, q2o3, q2o4, q2o5, q2o6]
+    questionOptions: [q2o1, q2o2, q2o3, q2o4, q2o5, q2o6],
+    answer: q2o3
   },
   {
     questionImage: q3,
     questionText:
       "3. Which shape should be in the rightmost cell with a question mark?",
-    questionOptions: [q3o1, q3o2, q3o3, q3o4, q3o5, q3o6]
+    questionOptions: [q3o1, q3o2, q3o3, q3o4, q3o5, q3o6],
+    answer: q3o5
   },
   {
     questionImage: q4,
     questionText:
       "4. Which shape should be in the rightmost cell with a question mark?",
-    questionOptions: [q4o1, q4o2, q4o3, q4o4, q4o5, q4o6]
+    questionOptions: [q4o1, q4o2, q4o3, q4o4, q4o5, q4o6],
+    answer: q4o6
   },
   {
     questionImage: q5,
     questionText:
       "5. Which shape should be in the rightmost cell with a question mark?",
-    questionOptions: [q5o1, q5o2, q5o3, q5o4, q5o5, q5o6]
+    questionOptions: [q5o1, q5o2, q5o3, q5o4, q5o5, q5o6],
+    answer: q5o4
   }
 ];
-
 const backHome = () => {
   window.location.href = "/";
 };
-
 function Qus() {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const currentQuestion = questionList[activeQuestion];
-  const { questionImage, questionText, questionOptions } =currentQuestion || "";
+
+  const { questionImage, questionText, questionOptions } =
+    currentQuestion || "";
   return (
     <div>
       <div className="icon-end">
@@ -91,7 +96,7 @@ function Qus() {
         </button>
       </div>
       <div className="quscontainer">
-        {
+        {activeQuestion < questionList.length ? (
           <>
             <img src={questionImage} alt="Logo" className="img" />
             <span>
@@ -101,13 +106,7 @@ function Qus() {
               {questionOptions?.map((question) => (
                 <img
                   onClick={() => {
-                    if (activeQuestion < questionList.length) {
-                      setActiveQuestion(activeQuestion + 1);
-                    } else {
-                      // on last question, need to show result
-                      <Result/>
-                      setActiveQuestion(0);
-                    }
+                    setActiveQuestion(activeQuestion + 1);
                   }}
                   src={question}
                   alt="Logo"
@@ -116,7 +115,9 @@ function Qus() {
               ))}
             </div>
           </>
-        }
+        ) : (
+          <Result />
+        )}
       </div>
     </div>
   );
